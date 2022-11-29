@@ -1,4 +1,4 @@
-
+from .config import input_filepath
 
 def read_lines(filepath):
     with open(filepath, 'r') as file:
@@ -26,7 +26,7 @@ def parse_country(line):
 def parse_input():
     cases = []
 
-    lines = read_lines('./data/input.txt')
+    lines = read_lines(input_filepath)
     line_index = 0
     case = 0
     while line_index < len(lines):
